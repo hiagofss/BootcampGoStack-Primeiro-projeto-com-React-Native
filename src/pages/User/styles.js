@@ -1,5 +1,7 @@
 import styled from 'styled-components/native';
 
+import { ActivityIndicator } from 'react-native';
+
 export const Container = styled.View`
   flex: 1;
   padding: 30px;
@@ -74,4 +76,12 @@ export const Author = styled.Text`
   font-size: 13px;
   color: #666;
   margin-top: 2px;
+`;
+
+export const LoadingStarred = styled(ActivityIndicator).attrs({
+  color: '#333',
+})`
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
 `;
